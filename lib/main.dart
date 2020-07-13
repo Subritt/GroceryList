@@ -9,20 +9,14 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('GroceryList'),
+        title: Text('GroceryList!'),
         centerTitle: true,
         backgroundColor: Colors.greenAccent,
       ),
       body: Center(
-        child: Text(
-          'Hello world!',
-          style: TextStyle(
-            fontSize: 26.0,
-            fontWeight: FontWeight.bold,
-            fontFamily: 'IndieFlower',
-            letterSpacing: 2.0,
-            color: Colors.grey[800],
-          ),
+        child: Image(
+          image: NetworkImage(
+              'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic3.srcdn.com%2Fwordpress%2Fwp-content%2Fuploads%2FBen-Affleck-Batman-Best-Movie-Version.jpg&f=1&nofb=1'),
         ),
       ),
       floatingActionButton: FloatingActionButton(
